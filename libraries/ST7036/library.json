@@ -1,0 +1,17 @@
+{
+    "name": "ST7036_LCD_Driver",
+    "keywords": "lcd, st7036",
+    "description": "This is an implementation of the ST7036 LCD driver controller.",
+    "authors": {
+        "name": "F Malpartida",
+        "url": "https://bitbucket.org/fmalpartida"
+    },
+    "repository":
+    {
+      "type": "git",
+      "url": "https://bitbucket.org/fmalpartida/st7036-display-driver"
+    },
+    "version": "1.1.0",
+    "frameworks": "arduino",
+    "platforms": "atmelavr"
+}
