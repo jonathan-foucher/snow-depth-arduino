@@ -275,7 +275,7 @@ It is necessary to measure the components' size and design the circuit so as to 
 
 ### > Modelization with PCBNew
 
-Once the design work completed, the printed circuit boards must be digitally modelled. For this, we used PCBNew, a tool contained in the KiCad software. You can download the software from [KiCad's website](http://kicad-pcb.org/).
+Once the design work completed, the printed circuit boards must be digitally modelled. For this, we used PCBNew, a tool contained in the KiCad software. You can download the software from [KiCad's website](http://kicad.org/).
 
 It is necessary to create the footprint of the components thanks to the measurements carried out previously. It is also possible to download footprints already created by other users for the most popular components.
 
