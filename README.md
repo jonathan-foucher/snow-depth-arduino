@@ -275,7 +275,7 @@ It is necessary to measure the components' size and design the circuit to place 
 
 ### > Modelization with PCBNew
 
-Once the design work completed, the printed circuit boards must be digitally modelled. For this, I used PCBNew, a tool contained in the KiCad software. You can download the software from [KiCad's website](http://kicad-pcb.org/).
+Once the design work completed, the printed circuit boards must be digitally modelled. For this, I used PCBNew, a tool contained in the KiCad software. You can download the software from [KiCad's website](https://www.kicad.org).
 
 It is necessary to create the footprint of the components thanks to the measurements carried out previously. It is also possible to download footprints already created by other users for the most popular components.
 
@@ -317,4 +317,4 @@ Now that everything is ready, all that remains is to test the entire device. As 
 
 The LCD screen displays "La hauteur de neige est 265 cm", the english translation is "The snow depth is 265 cm".
 
-The device works almost perfectly. Sometimes I get an error caused by the radio transmission that gives an outlier, but I programmed the LCD screen to display an error message in that case.
+The device works almost perfectly. Sometimes we get an error caused by the radio transmission that gives us an outlier but we programmed the LCD screen to display an error message in that case.
