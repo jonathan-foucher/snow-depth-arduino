@@ -47,21 +47,21 @@ We will use an ultrasonic distance sensor whose principle is quite simple. Ultra
 
 We can calculate the percentage of energy reflected during the change of medium thanks to the formula :
 
-![E% = (Z2 - Z1)² / (Z2 + Z1)²](https://latex.codecogs.com/svg.latex?%5CLARGE%20E%5C%25%20%3D%20%5Cfrac%7B%28Z2%20-%20Z1%29%5E2%7D%7B%28Z2%20&plus;%20Z1%29%5E2%7D)
+$`E\% = \frac{(Z2\ -\ Z1)^2}{(Z2\ +\ Z1)^2}`$
 
 - Z1 corresponds to the acoustic impedance of the first medium, that of the air in our case.
 - Z2 corresponds to the acoustic impedance of the second medium, that of the snow.
 
 Calculation :
 
-- Z1 = 430 Pa.s/m
-- Z2 = 0.75 Pa.s/m
+- $`Z1 = 430\ \ Pa.s/m`$
+- $`Z2 = 0.75\ \ Pa.s/m`$
 
 We then obtain E% = 99.3% of reflected energy, which is not surprising for a gas and a solid.
 
 It is this reflected wave which interests us because by measuring the time between the sending of the incident wave and the reception of the reflected wave and knowing the speed of the acoustic waves, we can then find the distance traveled by the wave.
 
-The formula used is the basic distance = speed x time but we must not forget to divide this distance by 2 because the wave travels twice the distance that we want to measure.
+The formula used is the basic $`distance = speed \times time`$ but we must not forget to divide this distance by 2 because the wave travels twice the distance that we want to measure.
 
 Furthermore, the distance sensor does not directly measure the snow depth, it measures the distance separating the device and the snow (denoted *airDepth*). The depth of the snow is then calculated by subtracting the *height* by the measured distance *airDepth*.
 
@@ -73,9 +73,9 @@ We want to improve the accuracy of our measurement, we know that the speed of ac
 
 The speed of sound as a function of temperature is given by the following two formulas :
 
-![speed(θ) = 331.3 * sqrt(1 + θ / 273.15)](https://latex.codecogs.com/svg.latex?%5CLARGE%20speed%28%5Ctheta%29%20%3D%20331%2C3%20%5Ctimes%20%5Csqrt%7B1%5C%20&plus;%5C%20%5Cfrac%7B%5Ctheta%7D%7B273%2C15%7D%7D)
+$`speed(\theta) = 331,3 \times \sqrt{1\ +\ \frac{\theta}{273,15}}`$
 
-![speed(θ) = 20.05 * sqrt(θ + 273,15)](https://latex.codecogs.com/svg.latex?%5CLARGE%20speed%28%5Ctheta%29%20%3D%2020%2C05%20%5Ctimes%20%5Csqrt%7B%5Ctheta%5C%20&plus;%5C%20273%2C15%7D)
+$`speed(\theta) = 20,05 \times \sqrt{\theta\ +\ 273,15}`$
 
 Both formulas give the same result then I decided to use the first one.
 
@@ -188,7 +188,7 @@ I have chosen the LM35CZ/NOPB which is an analog temperature sensor. It is compo
 
 This temperature sensor has an accuracy of +/-0.75 °C, which is reasonable in the context of this project. The temperature sensor sends a voltage proportional to the temperature on the *Vout* pin :
 
-![temperature = 500 * Vout / 1024](https://latex.codecogs.com/svg.latex?%5CLARGE%20temperature%20%3D%20%5Cfrac%7B500%5C%20%5Ctimes%5C%20Vout%7D%7B1024%7D)
+$`temperature = \frac{500\ \times\ Vout}{1024}`$
 
 ## 4) Radio emitter and receiver
 
